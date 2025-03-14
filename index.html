@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.title">CryptoExchange - Fast & Secure Trading</title>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <i class="fas fa-coins"></i>
+                    <span data-i18n="brand.name">CryptoExchange</span>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="#home" class="active" data-i18n="nav.home">Home</a>
+                    <a href="#how-to" data-i18n="nav.howTo">How-To Guide</a>
+                    <a href="#faq" data-i18n="nav.faq">FAQ</a>
+                    <a href="#contact" data-i18n="nav.contact">Contact</a>
+                    <a href="#security" data-i18n="nav.security">Security</a>
+                    <a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a>
+                </div>
+
+                <button class="lang-btn active" data-lang="en" title="Switch to English" aria-label="Switch to English" aria-pressed="true">
+                    <img src="assets/images/flags/en.svg" alt="English" aria-hidden="true">
+                    <span class="lang-text">EN</span>
+                </button>
+                <button class="lang-btn hidden" data-lang="ar" title="Switch to Arabic" aria-label="Switch to Arabic" aria-pressed="false">
+                    <img src="assets/images/flags/ae.svg" alt="Arabic" aria-hidden="true">
+                    <span class="lang-text">AR</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="floating-coin">
+                <i class="fab fa-bitcoin"></i>
+            </div>
+            <div class="floating-coin">
+                <i class="fas fa-dollar-sign"></i>
+            </div>
+            <div class="floating-coin">
+                <i class="fas fa-coins"></i>
+            </div>
+            <div class="floating-coin">
+                <i class="fas fa-exchange-alt"></i>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 data-i18n="hero.title">Fast & Secure Cryptocurrency Exchange</h1>
+                    <p data-i18n="hero.subtitle">Exchange your digital assets with confidence using our secure platform</p>
+                    <div class="hero-cta">
+                        <a href="#exchange-form" class="btn btn-primary">
+                            <i class="fas fa-exchange-alt"></i>
+                            Start Trading
+                        </a>
+                        <a href="#how-to" class="btn btn-secondary">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exchange Form Section -->
+        <section class="exchange-form">
+            <div class="container">
+                <div class="price-ticker">
+                    <div class="ticker-item">
+                        <img src="assets/images/crypto/btc.svg" alt="Bitcoin">
+                        <div class="ticker-info">
+                            <span class="crypto-name">Bitcoin</span>
+                            <span class="crypto-type">Cryptocurrency</span>
+                            <span class="crypto-price" data-crypto="btc">$88,769.00</span>
+                        </div>
+                    </div>
+                    <div class="ticker-item">
+                        <img src="assets/images/crypto/usdt.svg" alt="USDT">
+                        <div class="ticker-info">
+                            <span class="crypto-name">Tether</span>
+                            <span class="crypto-type">Stablecoin</span>
+                            <span class="crypto-price" data-crypto="usdt">$1.00</span>
+                        </div>
+                    </div>
+                    <div class="ticker-item">
+                        <img src="assets/images/crypto/ltc.svg" alt="Litecoin">
+                        <div class="ticker-info">
+                            <span class="crypto-name">Litecoin</span>
+                            <span class="crypto-type">Cryptocurrency</span>
+                            <span class="crypto-price" data-crypto="ltc">$119.29</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exchange-container">
+                    <form id="exchangeForm">
+                        <div class="form-group">
+                            <label for="cryptoAmount" data-i18n="exchange.amount">Amount</label>
+                            <input type="number" id="cryptoAmount" data-i18n-placeholder="exchange.enterAmount" placeholder="Enter amount" min="0" max="10000" step="0.000001" required>
+                            <select id="cryptoSelect">
+                                <option value="btc" data-i18n="exchange.currencies.btc">Bitcoin (BTC)</option>
+                                <option value="usdt" data-i18n="exchange.currencies.usdt">USDT</option>
+                                <option value="ltc" data-i18n="exchange.currencies.ltc">Litecoin (LTC)</option>
+                            </select>
+                        </div>
+
+                        <div class="payment-methods">
+                            <h3 class="payment-title">Choose Payment Method</h3>
+                            <div class="payment-grid">
+                                <button type="button" class="payment-btn crypto-btn">
+                                    <div class="payment-icon">
+                                        <i class="fas fa-wallet"></i>
+                                    </div>
+                                    <div class="payment-info">
+                                        <span class="payment-name">Crypto</span>
+                                        <span class="payment-desc">Pay with any cryptocurrency</span>
+                                    </div>
+                                </button>
+                                <button type="button" class="payment-btn visa-btn">
+                                    <div class="payment-icon">
+                                        <i class="fab fa-cc-visa"></i>
+                                    </div>
+                                    <div class="payment-info">
+                                        <span class="payment-name">Visa Card</span>
+                                        <span class="payment-desc">Debit or Credit card</span>
+                                    </div>
+                                </button>
+                                <button type="button" class="payment-btn paypal-btn">
+                                    <div class="payment-icon">
+                                        <i class="fab fa-paypal"></i>
+                                    </div>
+                                    <div class="payment-info">
+                                        <span class="payment-name">PayPal</span>
+                                        <span class="payment-desc">Fast & secure payment</span>
+                                    </div>
+                                </button>
+                                <button type="button" class="payment-btn apple-pay-btn">
+                                    <div class="payment-icon">
+                                        <i class="fab fa-apple-pay"></i>
+                                    </div>
+                                    <div class="payment-info">
+                                        <span class="payment-name">Apple Pay</span>
+                                        <span class="payment-desc">Quick touch payment</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Crypto Payment Form -->
+                        <div class="payment-form crypto-form hidden">
+                        </div>
+
+                        <!-- Visa Payment Form -->
+                        <div class="payment-form visa-form hidden">
+                            <div class="form-group">
+                                <label data-i18n="exchange.cryptoPayment.sendTo">Send to Address</label>
+                                <div class="address-container">
+                                    <input type="text" id="cryptoAddress" readonly value="1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa">
+                                    <button type="button" class="copy-btn" title="Copy Address">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cardName" data-i18n="exchange.visaPayment.cardholderName">Cardholder Name</label>
+                                <input type="text" id="cardName" data-i18n-placeholder="exchange.visaPayment.enterName" placeholder="Enter cardholder name">
+                            </div>
+                            <div class="form-group">
+                                <label for="cardNumber" data-i18n="exchange.visaPayment.cardNumber">Card Number</label>
+                                <input type="text" id="cardNumber" data-i18n-placeholder="exchange.placeholders.cardNumber" placeholder="1234 5678 9012 3456">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="cardExpiry" data-i18n="exchange.visaPayment.expiryDate">Expiry Date</label>
+                                    <input type="text" id="cardExpiry" data-i18n-placeholder="exchange.placeholders.expiryDate" placeholder="MM/YY">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cardCvv" data-i18n="exchange.visaPayment.cvv">CVV</label>
+                                    <input type="text" id="cardCvv" data-i18n-placeholder="exchange.placeholders.cvv" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="fee-summary">
+                            <div class="fee-item">
+                                <span data-i18n="exchange.fees.exchange">Exchange Fee</span>
+                                <span class="fee-amount">0.00</span>
+                            </div>
+                            <div class="fee-item">
+                                <span data-i18n="exchange.fees.network">Network Fee</span>
+                                <span class="fee-amount">0.00</span>
+                            </div>
+                            <div class="fee-item total">
+                                <span data-i18n="exchange.fees.total">Total Amount</span>
+                                <span class="total-amount">0.00</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="confirm-exchange-btn" style="background: none; border: none; width: 100%; padding: 0;">
+                            <div class="confirm-btn-container">
+                                <div class="left-side">
+                                    <div class="card">
+                                        <div class="card-line"></div>
+                                        <div class="buttons"></div>
+                                    </div>
+                                    <div class="post">
+                                        <div class="post-line"></div>
+                                        <div class="screen">
+                                            <div class="dollar">$</div>
+                                        </div>
+                                        <div class="numbers"></div>
+                                        <div class="numbers-line2"></div>
+                                    </div>
+                                </div>
+                                <div class="right-side">
+                                    <div class="new">Confirm Exchange</div>
+                                    <div class="arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- How-To Guide Section -->
+        <section id="how-to" class="how-to">
+            <div class="container">
+                <h2 data-i18n="howTo.title">How to Exchange</h2>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3 data-i18n="howTo.steps.step1.title">1. Enter Amount</h3>
+                        <p data-i18n="howTo.steps.step1.description">Choose your cryptocurrency and enter the amount you want to exchange</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3 data-i18n="howTo.steps.step2.title">2. Choose Payment</h3>
+                        <p data-i18n="howTo.steps.step2.description">Select your preferred payment method: Cryptocurrency or Visa</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3 data-i18n="howTo.steps.step3.title">3. Confirm & Send</h3>
+                        <p data-i18n="howTo.steps.step3.description">Review the transaction details and confirm to complete your exchange</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 data-i18n="faq.title">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="faq.questions.q1.question">What cryptocurrencies do you support?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.questions.q1.answer">We currently support Bitcoin (BTC), USDT, and Litecoin (LTC). More cryptocurrencies will be added soon.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="faq.questions.q2.question">How long does the exchange process take?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.questions.q2.answer">Most exchanges are processed within 10-30 minutes, depending on network conditions.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="faq.questions.q3.question">Is my payment information secure?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.questions.q3.answer">Yes, we use industry-standard encryption and security measures to protect your payment information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security Section -->
+        <section id="security" class="security">
+            <div class="container">
+                <h2 data-i18n="security.title">Trust & Security</h2>
+                <div class="security-features">
+                    <div class="security-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3 data-i18n="security.features.transactions.title">Secure Transactions</h3>
+                        <p data-i18n="security.features.transactions.description">All transactions are protected with advanced encryption</p>
+                    </div>
+                    <div class="security-item">
+                        <i class="fas fa-lock"></i>
+                        <h3 data-i18n="security.features.data.title">Data Protection</h3>
+                        <p data-i18n="security.features.data.description">Your personal information is encrypted and never shared</p>
+                    </div>
+                    <div class="security-item">
+                        <i class="fas fa-user-shield"></i>
+                        <h3 data-i18n="security.features.support.title">24/7 Support</h3>
+                        <p data-i18n="security.features.support.description">Our support team is always available to help</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2 data-i18n="testimonials.title">What Our Users Say</h2>
+                <div class="testimonials-container">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p data-i18n="testimonials.user1.quote">"Fast and reliable service. Best exchange rates I've found!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <i class="fas fa-user-circle fa-3x"></i>
+                            <div class="author-info">
+                                <h4 data-i18n="testimonials.user1.name">John Doe</h4>
+                                <span data-i18n="testimonials.verifiedUser">Verified User</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p data-i18n="testimonials.user2.quote">"The interface is so easy to use. Great customer support too!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <i class="fas fa-user-circle fa-3x"></i>
+                            <div class="author-info">
+                                <h4 data-i18n="testimonials.user2.name">Jane Smith</h4>
+                                <span data-i18n="testimonials.verifiedUser">Verified User</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 data-i18n="contact.title">Contact Us</h2>
+                <div class="contact-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-i18n="contact.form.name">Name</label>
+                            <input type="text" id="name" data-i18n-placeholder="contact.form.namePlaceholder" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="contact.form.email">Email</label>
+                            <input type="email" id="email" data-i18n-placeholder="contact.form.emailPlaceholder" placeholder="Your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="contact.form.message">Message</label>
+                            <textarea id="message" data-i18n-placeholder="contact.form.messagePlaceholder" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" data-i18n="contact.form.send">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-coins"></i>
+                    <span>CryptoExchange</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+                        <a href="#home" data-i18n="nav.home">Home</a>
+                        <a href="#how-to" data-i18n="nav.howTo">How-To Guide</a>
+                        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+                        <a href="#contact" data-i18n="nav.contact">Contact</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4 data-i18n="footer.legal.title">Legal</h4>
+                        <a href="#" data-i18n="footer.legal.terms">Terms of Service</a>
+                        <a href="#" data-i18n="footer.legal.privacy">Privacy Policy</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4 data-i18n="footer.connect.title">Connect</h4>
+                        <div class="social-links">
+                            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2024 CryptoExchange. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
