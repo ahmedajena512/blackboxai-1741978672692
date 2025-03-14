@@ -1,0 +1,145 @@
+{
+    "nav": {
+        "home": "Home",
+        "howTo": "How-To Guide",
+        "faq": "FAQ",
+        "contact": "Contact",
+        "security": "Security",
+        "testimonials": "Testimonials"
+    },
+    "hero": {
+        "title": "Fast & Secure Cryptocurrency Exchange",
+        "subtitle": "Exchange your digital assets with confidence using our secure platform"
+    },
+    "exchange": {
+        "amount": "Amount",
+        "enterAmount": "Enter amount",
+        "selectCrypto": "Select Cryptocurrency",
+        "currencies": {
+            "btc": "Bitcoin (BTC)",
+            "usdt": "USDT",
+            "ltc": "Litecoin (LTC)"
+        },
+        "paymentMethods": {
+            "crypto": "Pay with Crypto",
+            "visa": "Pay with Visa"
+        },
+        "cryptoPayment": {
+            "sendTo": "Send to Address",
+            "copy": "Copy Address"
+        },
+        "visaPayment": {
+            "cardholderName": "Cardholder Name",
+            "enterName": "Enter cardholder name",
+            "cardNumber": "Card Number",
+            "expiryDate": "Expiry Date",
+            "cvv": "CVV"
+        },
+        "placeholders": {
+            "cardNumber": "1234 5678 9012 3456",
+            "expiryDate": "MM/YY",
+            "cvv": "123"
+        },
+        "fees": {
+            "exchange": "Exchange Fee",
+            "network": "Network Fee",
+            "total": "Total Amount"
+        },
+        "confirm": "Confirm Exchange"
+    },
+    "howTo": {
+        "title": "How to Exchange",
+        "steps": {
+            "step1": {
+                "title": "1. Enter Amount",
+                "description": "Choose your cryptocurrency and enter the amount you want to exchange"
+            },
+            "step2": {
+                "title": "2. Choose Payment",
+                "description": "Select your preferred payment method: Cryptocurrency or Visa"
+            },
+            "step3": {
+                "title": "3. Confirm & Send",
+                "description": "Review the transaction details and confirm to complete your exchange"
+            }
+        }
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": {
+            "q1": {
+                "question": "What cryptocurrencies do you support?",
+                "answer": "We currently support Bitcoin (BTC), USDT, and Litecoin (LTC). More cryptocurrencies will be added soon."
+            },
+            "q2": {
+                "question": "How long does the exchange process take?",
+                "answer": "Most exchanges are processed within 10-30 minutes, depending on network conditions."
+            },
+            "q3": {
+                "question": "Is my payment information secure?",
+                "answer": "Yes, we use industry-standard encryption and security measures to protect your payment information."
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "send": "Send Message",
+            "namePlaceholder": "Enter your name",
+            "emailPlaceholder": "Enter your email",
+            "messagePlaceholder": "Type your message here"
+        }
+    },
+    "security": {
+        "title": "Trust & Security",
+        "features": {
+            "transactions": {
+                "title": "Secure Transactions",
+                "description": "All transactions are protected with advanced encryption"
+            },
+            "data": {
+                "title": "Data Protection",
+                "description": "Your personal information is encrypted and never shared"
+            },
+            "support": {
+                "title": "24/7 Support",
+                "description": "Our support team is always available to help"
+            }
+        }
+    },
+    "testimonials": {
+        "title": "What Our Users Say",
+        "verifiedUser": "Verified User"
+    },
+    "footer": {
+        "quickLinks": "Quick Links",
+        "legal": {
+            "title": "Legal",
+            "terms": "Terms of Service",
+            "privacy": "Privacy Policy"
+        },
+        "connect": {
+            "title": "Connect",
+            "social": "Follow us on social media"
+        },
+        "copyright": "© 2024 CryptoExchange. All rights reserved."
+    },
+    "errors": {
+        "invalidAmount": "Please enter a valid amount",
+        "invalidCard": "Invalid card details",
+        "invalidExpiry": "Invalid expiry date format (MM/YY)",
+        "invalidCvv": "Invalid CVV",
+        "requiredFields": "Please fill in all required fields",
+        "fetchError": "Unable to fetch current prices. Please try again later.",
+        "copyError": "Failed to copy address",
+        "paymentError": "Failed to process payment. Please try again."
+    },
+    "success": {
+        "copied": "Address copied!",
+        "transaction": "Transaction initiated! Please send the exact amount to the provided address.",
+        "payment": "Payment information sent successfully!"
+    }
+}
